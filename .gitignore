@@ -1,0 +1,16 @@
+docker-demo-1/.terraform
+docker-demo-1/terraform.tfstate
+docker-demo-1/terraform.tfstate.backup
+docker-demo-2/.terraform
+docker-demo-2/terraform.tfstate
+docker-demo-2/terraform.tfstate.backup
+docker-demo-3/.terraform
+docker-demo-3/terraform.tfstate
+docker-demo-3/terraform.tfstate.backup
+s3-bucket/.terraform 
+s3-bucket/terraform.tfstate
+s3-bucket/terraform.tfstate.backup
+vpc/.terraform
+jenkins/.terraform
+jenkins/terraform.tfstate
+jenkins/terraform.tfstate.backup
