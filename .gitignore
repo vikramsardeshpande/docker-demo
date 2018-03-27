@@ -14,3 +14,4 @@ vpc/.terraform
 jenkins/.terraform
 jenkins/terraform.tfstate
 jenkins/terraform.tfstate.backup
+ecs-cluster/.terraform

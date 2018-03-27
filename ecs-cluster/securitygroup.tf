@@ -1,5 +1,5 @@
 resource "aws_security_group" "ecs-securitygroup" {
-  vpc_id = "${aws_vpc.main.id}"
+  vpc_id = "${data.terraform_remote_state.vpc.vpc_id}"
   name = "ecs"
   description = "security group for ecs"
   egress {
@@ -10,10 +10,11 @@ resource "aws_security_group" "ecs-securitygroup" {
   }
 
   ingress {
-      from_port = 3000
-      to_port = 3000
+      from_port = 8080
+      to_port = 8080
       protocol = "tcp"
-      security_groups = ["${aws_security_group.myapp-elb-securitygroup.id}"]
+      #security_groups = ["${aws_security_group.myapp-elb-securitygroup.id}"]
+      security_groups = ["${data.terraform_remote_state.vpc.myapp-elb-securitygroup}"]
   } 
   ingress {
       from_port = 22
