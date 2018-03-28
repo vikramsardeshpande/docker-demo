@@ -24,7 +24,7 @@ resource "aws_ecs_service" "myapp-service" {
   depends_on = ["aws_iam_policy_attachment.ecs-service-attach1"]
 
   load_balancer {
-    elb_name = "${data.terraform_remote_state.vpc.elb_name}"
+    elb_name = "${data.terraform_remote_state.vpc.elb_id}"
     container_name = "myapp"
     container_port = 8080
   }
