@@ -46,7 +46,7 @@ pip install awscli
 
 # install terraform
 cd /usr/local/bin
-wget -q https://releases.hashicorp.com/terraform/0.11.1/terraform_0.11.1_linux_amd64.zip
+wget -q https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip
 unzip terraform_0.11.1_linux_amd64.zip
 # clean up
 apt-get clean
